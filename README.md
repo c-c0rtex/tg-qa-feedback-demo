@@ -21,6 +21,26 @@ It shows the parts of tg-qa a rich bot needs:
 `/start` & `/help` return the intro/help text; a voice message and a photo are confirmed
 with «Сообщение отправлено!»; a sticker and a video note are rejected as unsupported.
 
+## Catching a regression
+
+A QA tool should be judged by the bugs it catches, so the demo ships one. Apply the included
+regression — a refactor that drops `VOICE` from the bot's supported-media filter — and watch
+tg-qa isolate it:
+
+```bash
+git -C "$FEEDBACK_SRC" apply patches/regression-drop-voice.patch   # voice no longer accepted
+# restart the bot, then:
+tg-qa-run --project feedbot --junit          # 5/6 — only TC-F3 (voice) fails
+tg-qa-maintain --project feedbot --dry-run   # verdict: PRODUCT-BUG
+```
+
+Result (committed under [sample-reports/with-regression/](sample-reports/with-regression/)):
+**only the voice test case fails** — photo, sticker, video-note and the commands stay green —
+with the real dialog attached (voice sent → «этот тип сообщения не поддерживается» instead of
+«Сообщение отправлено!»). `tg-qa-maintain` does **not** rewrite the spec to match the broken
+behaviour: it returns a **PRODUCT-BUG** verdict, naming voice as no longer accepted though
+`/help` still promises it.
+
 ## What it exercised in tg-qa (and fixed)
 
 This bot dogfooded two real gaps in tg-qa's **aiogram source miner**, both fixed upstream:

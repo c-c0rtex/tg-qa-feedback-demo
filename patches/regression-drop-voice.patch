@@ -1,0 +1,11 @@
+diff --git a/bot/filters/supported_media.py b/bot/filters/supported_media.py
+index d7f1d29..b0a193f 100644
+--- a/bot/filters/supported_media.py
++++ b/bot/filters/supported_media.py
+@@ -6,5 +6,5 @@ class SupportedMediaFilter(BaseFilter):
+     async def __call__(self, message: Message) -> bool:
+         return message.content_type in (
+             ContentType.ANIMATION, ContentType.AUDIO, ContentType.DOCUMENT,
+-            ContentType.PHOTO, ContentType.VIDEO, ContentType.VOICE
++            ContentType.PHOTO, ContentType.VIDEO
+         )

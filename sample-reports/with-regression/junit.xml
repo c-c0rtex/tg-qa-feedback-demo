@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tg-qa" tests="6" failures="1">
+  <testcase name="f1-start.yaml::TC-F1"/>
+  <testcase name="f2-help.yaml::TC-F2"/>
+  <testcase name="f3-voice.yaml::TC-F3"><failure>step 1: missing text: 'Сообщение отправлено!'
+--- got ---
+К сожалению, этот тип сообщения не поддерживается. Отправь что-нибудь другое.</failure></testcase>
+  <testcase name="f4-photo.yaml::TC-F4"/>
+  <testcase name="f5-sticker.yaml::TC-F5"/>
+  <testcase name="f6-videonote.yaml::TC-F6"/>
+</testsuite>
