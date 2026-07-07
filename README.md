@@ -1,8 +1,8 @@
 # tg-qa demo #2 — Feedback bot (aiogram · media / stickers / voice)
 
-A worked example of [tg-qa](https://github.com/c-c0rtex/tg-qa) testing a **bot-centric**
+A worked example of [tg-qa](https://codeberg.org/c-c0rtex/tg-qa) testing a **bot-centric**
 Telegram bot — MasterGroosha's [telegram-feedback-bot](https://github.com/MasterGroosha/telegram-feedback-bot)
-(aiogram 3.21, Fluent i18n, in-RAM, long polling). Where [demo #1](https://github.com/c-c0rtex/tg-qa-demo)
+(aiogram 3.21, Fluent i18n, in-RAM, long polling). Where [demo #1](https://codeberg.org/c-c0rtex/tg-qa-demo)
 is a Mini App launcher, this one is all about the **bot dialog**: commands, media handling,
 and deterministic replies.
 
