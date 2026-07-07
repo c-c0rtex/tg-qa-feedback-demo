@@ -1,0 +1,8 @@
+tc: TC-F1
+title: /start показывает приветствие
+type: passive
+steps:
+  - send: "/start"
+    expect:
+      contains: ["Привет", "связаться с моим хозяином"]
+      snapshot: f1-intro

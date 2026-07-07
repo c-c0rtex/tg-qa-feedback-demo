@@ -1,0 +1,16 @@
+{
+  "bot": "@tgqa_feedback_demo_bot",
+  "bot_source_dir": "/home/mikita/feedback-bot",
+  "bot_framework": null,
+  "language": "Russian",
+  "reply_timeout": 15,
+  "send_delay": 1.5,
+  "auto_mute": null,
+  "auto_read": null,
+  "text_masks": null,
+  "fixture_cmd": null,
+  "fixture_teardown_cmd": null,
+  "context_notes": null,
+  "miniapp_url": null,
+  "miniapp_platform": null
+}

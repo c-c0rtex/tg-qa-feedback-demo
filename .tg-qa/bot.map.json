@@ -1,0 +1,173 @@
+{
+  "framework": "aiogram",
+  "source_dir": "/home/mikita/feedback-bot",
+  "mined_by": "deterministic+llm",
+  "commands": [
+    {
+      "command": "/help",
+      "source": "bot/commandsworker.py:9"
+    },
+    {
+      "command": "/who",
+      "source": "bot/commandsworker.py:14"
+    },
+    {
+      "command": "/ban",
+      "source": "bot/commandsworker.py:15"
+    },
+    {
+      "command": "/shadowban",
+      "source": "bot/commandsworker.py:16"
+    },
+    {
+      "command": "/unban",
+      "source": "bot/commandsworker.py:17"
+    },
+    {
+      "command": "/list_banned",
+      "source": "bot/commandsworker.py:18"
+    },
+    {
+      "command": "/get",
+      "source": "bot/handlers/adminmode.py:34"
+    },
+    {
+      "command": "/start",
+      "source": "bot/handlers/usermode.py:29"
+    }
+  ],
+  "callbacks": [],
+  "keyboards": [],
+  "replies": [
+    {
+      "text": "\n",
+      "source": "bot/handlers/bans.py:81"
+    },
+    {
+      "text": "Это сообщение не является ответом на какое-либо другое!",
+      "source": "bot/locales/ru/errors.ftl",
+      "mined_by": "locale"
+    },
+    {
+      "text": "Не удалось отправить сообщение адресату!\nОтвет от Telegram: { $error }",
+      "source": "bot/locales/ru/errors.ftl",
+      "mined_by": "locale"
+    },
+    {
+      "text": "Не удалось получить информацию о пользователе! Ошибка: { $error }",
+      "source": "bot/locales/ru/errors.ftl",
+      "mined_by": "locale"
+    },
+    {
+      "text": "К сожалению, редактирование сообщения не будет видно принимающей стороне. Рекомендую просто отправить новое сообщение.",
+      "source": "bot/locales/ru/errors.ftl",
+      "mined_by": "locale"
+    },
+    {
+      "text": "К сожалению, этот тип сообщения не поддерживается для ответа пользователю.",
+      "source": "bot/locales/ru/errors.ftl",
+      "mined_by": "locale"
+    },
+    {
+      "text": "К сожалению, длина этого сообщения превышает допустимый размер. Пожалуйста, сократи свою мысль и попробуй ещё раз.",
+      "source": "bot/locales/ru/errors.ftl",
+      "mined_by": "locale"
+    },
+    {
+      "text": "К сожалению, длина подписи медиафайла превышает допустимый размер. Пожалуйста, сократи свою мысль и попробуй ещё раз.",
+      "source": "bot/locales/ru/errors.ftl",
+      "mined_by": "locale"
+    },
+    {
+      "text": "К сожалению, автор бота решил тебя заблокировать, сообщения не будут доставлены.",
+      "source": "bot/locales/ru/errors.ftl",
+      "mined_by": "locale"
+    },
+    {
+      "text": "К сожалению, этот тип сообщения не поддерживается. Отправь что-нибудь другое.",
+      "source": "bot/locales/ru/errors.ftl",
+      "mined_by": "locale"
+    },
+    {
+      "text": "нет",
+      "source": "bot/locales/ru/strings.ftl",
+      "mined_by": "locale"
+    },
+    {
+      "text": "Имя: { $name }\nID: { NUMBER($id, useGrouping: 0) }\nUsername: { $username }",
+      "source": "bot/locales/ru/strings.ftl",
+      "mined_by": "locale"
+    },
+    {
+      "text": "ID { NUMBER($id, useGrouping: 0) } добавлен в список заблокированных. При попытке отправить сообщение пользователь получит уведомление о том, что заблокирован.",
+      "source": "bot/locales/ru/strings.ftl",
+      "mined_by": "locale"
+    },
+    {
+      "text": "ID { NUMBER($id, useGrouping: 0) } добавлен в список скрытно заблокированных. При попытке отправить сообщение пользователь не узнает, что заблокирован.",
+      "source": "bot/locales/ru/strings.ftl",
+      "mined_by": "locale"
+    },
+    {
+      "text": "ID { NUMBER($id, useGrouping: 0) } разблокирован.",
+      "source": "bot/locales/ru/strings.ftl",
+      "mined_by": "locale"
+    },
+    {
+      "text": "Нет заблокированных пользователей.",
+      "source": "bot/locales/ru/strings.ftl",
+      "mined_by": "locale"
+    },
+    {
+      "text": "Список заблокированных:",
+      "source": "bot/locales/ru/strings.ftl",
+      "mined_by": "locale"
+    },
+    {
+      "text": "Список скрытно заблокированных:",
+      "source": "bot/locales/ru/strings.ftl",
+      "mined_by": "locale"
+    },
+    {
+      "text": "Сообщение отправлено!",
+      "source": "bot/locales/ru/strings.ftl",
+      "mined_by": "locale"
+    },
+    {
+      "text": "Привет ✌️\nC моей помощью ты можешь связаться с моим хозяином и получить от него ответ. Просто напиши что-нибудь в этот диалог.",
+      "source": "bot/locales/ru/strings.ftl",
+      "mined_by": "locale"
+    },
+    {
+      "text": "С моей помощью ты можешь связаться с владельцем этого бота и получить от него ответ.\nПросто продолжай писать в этот диалог, но учти, что поддерживаются не все типы сообщений, а только текст, фото, видео, аудио, файлы и голосовые сообщения (последние лучше не использовать без крайней необходимости).",
+      "source": "bot/locales/ru/strings.ftl",
+      "mined_by": "locale"
+    },
+    {
+      "text": "Не удалось извлечь ID для ответа!",
+      "source": "bot/handlers/adminmode.py",
+      "mined_by": "llm"
+    },
+    {
+      "text": "Некорректный ID для ответа!",
+      "source": "bot/handlers/adminmode.py",
+      "mined_by": "llm"
+    },
+    {
+      "text": "{text}\n\n#id{id}",
+      "source": "bot/handlers/usermode.py",
+      "mined_by": "llm"
+    },
+    {
+      "text": "{caption}\n\n#id{id}",
+      "source": "bot/handlers/usermode.py",
+      "mined_by": "llm"
+    },
+    {
+      "text": "• #id{id}",
+      "source": "bot/handlers/bans.py",
+      "mined_by": "llm"
+    }
+  ],
+  "miniapp": false
+}

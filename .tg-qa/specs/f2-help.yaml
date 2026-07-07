@@ -1,0 +1,8 @@
+tc: TC-F2
+title: /help перечисляет поддерживаемые типы
+type: passive
+steps:
+  - send: "/help"
+    expect:
+      contains: ["поддерживаются не все типы сообщений", "текст, фото, видео, аудио, файлы и голосовые"]
+      snapshot: f2-help

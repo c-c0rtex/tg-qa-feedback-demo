@@ -1,0 +1,7 @@
+tc: TC-F4
+title: фото принимается и подтверждается
+type: mutating
+steps:
+  - send_media: { path: "/home/mikita/tg-qa-feedback-demo/.tg-qa/media/photo.png", kind: photo }
+    expect:
+      contains: ["Сообщение отправлено!"]
